@@ -1,0 +1,21 @@
+:root {
+    --grid-unit: 1rem;
+    --border-radius-base: 0.5rem;
+}
+
+[data-theme="light"] {
+    --color-bg: #F9F9F9;
+    --color-fg: #000000;
+}
+
+[data-theme="dark"] {
+    --color-bg: #1E1E1E;
+    --color-fg: #F9F9F9;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    transition: background-color 500ms, color 500ms;
+    font-family: sans-serif;
+}
